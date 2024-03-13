@@ -1,0 +1,243 @@
+
+body{
+    margin: 0;
+    background-color: rgb(255, 245, 190);
+}
+.container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(70, 65, 61);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7%;
+}
+.icon {
+    font-size: 40px;/* agranda el icono*/
+}
+.icon i {
+    margin-left: 10px;
+    color: white; 
+}
+.links {
+    margin-left: auto; /* Mueve los enlaces hacia el final */
+    margin-right: 15px;
+    margin-top: 10px; /* Agrega margen superior a los enlaces */
+}
+.links a {
+    margin-left: 20px;   /* separa los links */
+    color: white; 
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-color: aqua;
+    }
+}
+ /* segunda parte*/
+
+ .containerA {  
+    display: flex;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align:justify; /* Centra el texto dentro del contenedor */
+    margin-left: 30%; /* Mueve los elementos hacia la derecha */
+}
+h2 {
+    margin-top: 100px;
+}
+.contenedorF {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */   
+}
+.foto img {
+    margin-top: 160px; /* Añade margen en la parte superior de la imagen */
+    border-radius: 10px;
+    max-width: 40%; /* Establece el ancho máximo de la imagen al 50% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    display: block; /* Evita cualquier espacio adicional alrededor de la imagen */
+    margin-left: 20px; /* Añade un pequeño espacio entre la imagen y el texto */
+    margin-bottom: 60px;
+}
+.Contenido {
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+/* Tercera parte*/
+
+.containerB {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Ajusta el margen superior si es necesario */
+}
+
+.Paisaje img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto original */
+}
+
+ /* ultima parte*/
+
+ .containerC {
+    background-color: rgb(70, 65, 61);
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 120px;
+}
+.iconF {
+    font-size: 40px;/* agranda el icono*/
+    order: 1;
+}
+.iconF i {
+    color: white;
+    margin-right: 10px;
+}
+
+.linksfinal p {
+    margin-left: 10px;
+    color: rgb(255, 187, 0);
+}
+
+.linksfinal {
+    display: flex;
+    flex-direction: column;
+}
+.linksfinal a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+/*------------------------formulario----------------------*/
+
+footer {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    background-color: (255, 245, 190);
+    border: 1px solid #000000;
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------Formulario---------------------------*/
+
+.formulario {
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"], .form-row input[type="email"] {
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    background-color:#ffffff;
+    border: 1px solid black;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+    }
+
+    .form-row button {
+        margin-left: 120px;
+    }
+  }
+  /* ------------- clase mensaje ------------- */
+
+  .form-row textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 6px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+    width: 100%;
+  }
+  /*--------------------------boton------------------*/
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #5995da;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+
+  .form-row burtton:hover {
+    background-color: #76aeed;
+  }
+
+  .form-row button:hover {
+    background-color: #497fc7;
+  }
